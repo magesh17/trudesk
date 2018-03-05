@@ -20,7 +20,7 @@ var db = {};
 
 var dbPassword = encodeURIComponent(nconf.get('mongo:password'));
 
-var CONNECTION_URI = 'mongodb://' + nconf.get('mongo:username') + ':' + dbPassword + '@' + nconf.get('mongo:host') + ':' + nconf.get('mongo:port') + '/' + nconf.get('mongo:database');
+var CONNECTION_URI = 'mongodb://<admin>:<redevon123>@ds155268.mlab.com:55268/trudesk';
 
 mongoose.connection.on('error', function(e) {
     winston.error('Oh no, something went wrong with DB! - ' + e.message);
